@@ -1,0 +1,31 @@
+/***Project references/consultation sources***/
+
+1. solutions from the practice questions 1 and 3 of the project: Explore US Bikeshare.
+
+2. Udacity tutorials, quizzes and solutions
+
+3. google.com [how-tos]
+
+4. pandas tutorials on groupby(), idxmax(), and value_counts()
+
+5. stackoverflow.com ...[extracting month, hour, day of the week from start time]
+                        [conversion of start time to date time}
+
+6. handling exceptions using try and except from the scripting tutorial.
+
+7. stackoverflow.com [display increment raw data using iloc depending on user input]
+                     [other uses of the iloc]
+
+8. youtube.com [Atom Editor Tutorials #11 - Linters & Hinters]
+
+9. https://stackoverflow.com/questions/50109643/valueerror-traceback-most-recent-call-last-ipython-input-15-d27c936e2293-in
+
+
+"""/*My appologies for the late submission of my project*
+Life happens, but this course to me is a life time opportunity
+and I am pleased to be among those opportuned to partake in
+this wonderful porgram. I will always do my very best to make
+ends meet.
+
+Thank You*/
+"""
