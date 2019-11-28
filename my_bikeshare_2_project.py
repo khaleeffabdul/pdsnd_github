@@ -202,12 +202,12 @@ def user_stats(df):
 #Display_raw_data
 def more_data(df):
     strt = 0
-    raw_data = input('\nWould you like to see the raw data? \n Enter [Y or N]:~> ')
-    while raw_data.lower() == 'y':
+    raw_data = input('\nWould you like to see the raw data? \n Enter [Yes or No]:~> ')
+    while raw_data.lower() == 'yes':
         first_ten_lines = df.iloc[strt: strt+10]
         print('The first ten lines of the raw data are: \n',first_ten_lines)
         strt += 10
-        raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [Y or N]:~> ')
+        raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [Yes or No]:~> ')
 
 
 def main():
@@ -221,8 +221,8 @@ def main():
         user_stats(df)
         more_data(df)
 
-        restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [Y or N]:~> ')
-        if restart.lower() != 'y':
+        restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [Yes or No]:~> ')
+        if restart.lower() != 'yes':
             break
 
 
