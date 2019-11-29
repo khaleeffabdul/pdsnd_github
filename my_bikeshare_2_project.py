@@ -23,7 +23,7 @@ def get_filters():
         city = input("Kindly select any city\'s data you would like to explore, from the cities listed below: \
         \n\tchicago \n\tnew york city \n\twashington\n\ncity name~> ").lower()
         if city.lower() not in ('chicago', 'new york city', 'washington'):
-            print("\nInvalid input! Try again!!\n")
+            print("\nInvalid input! Try once more!!\n")
             continue
         else:
             break
@@ -34,7 +34,7 @@ def get_filters():
         month = input("\nKindly select any month you would like to filter the data by, from the list below: \
         \n\tJanuary \n\tFebruary \n\tMarch \n\tApril \n\tMay \n\tJune\n\nmonth~> ").lower()
         if month.lower() not in ('january', 'february', 'march', 'april', 'may', 'june'):
-            print("\nInvalid input! Try again!!\n")
+            print("\nInvalid input! Try once more!!\n")
             continue
         else:
             break
@@ -45,7 +45,7 @@ def get_filters():
         day = input("\nKindly select any day of the week you would like to filter the data by using the format listed below: \
         \n\tmonday \n\ttuesday \n\twednesday \n\tthursday \n\tfriday \n\tsaturday \n\tsunday\n\nday~> ").lower()
         if day.lower() not in ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
-            print('\nInvalid input! Try again!!')
+            print('\nInvalid input! Try once more!!')
             continue
         else:
             break
@@ -202,12 +202,12 @@ def user_stats(df):
 #Display_raw_data
 def more_data(df):
     strt = 0
-    raw_data = input('\nWould you like to see the raw data? \n Enter [Y or N]:~> ')
-    while raw_data.lower() == 'y':
+    raw_data = input('\nWould you like to see the raw data? \n Enter [YES or NO]:~> ')
+    while raw_data.lower() == 'yes':
         first_ten_lines = df.iloc[strt: strt+10]
         print('The first ten lines of the raw data are: \n',first_ten_lines)
         strt += 10
-        raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [Y or N]:~> ')
+        raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [YES or NO]:~> ')
 
 
 def main():
@@ -221,8 +221,8 @@ def main():
         user_stats(df)
         more_data(df)
 
-        restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [Y or N]:~> ')
-        if restart.lower() != 'y':
+        restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [YES or NO]:~> ')
+        if restart.lower() != 'yes':
             break
 
 
