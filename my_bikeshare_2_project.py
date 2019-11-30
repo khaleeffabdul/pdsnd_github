@@ -203,6 +203,7 @@ def user_stats(df):
 def more_data(df):
     strt = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< .merge_file_a03384
     raw_data = input('\nWould you like to see the raw data? \n Enter [Yes or No]:~> ')
     while raw_data.lower() == 'yes':
@@ -220,9 +221,17 @@ def more_data(df):
     raw_data = input('\nWould you like to see the raw data? \n Enter [Yes or No]:~> ')
     while raw_data.lower() == 'yes':
 >>>>>>> documentation
+||||||| merged common ancestors
+    raw_data = input('\nWould you like to see the raw data? \n Enter [Y or N]:~> ')
+    while raw_data.lower() == 'y':
+=======
+    raw_data = input('\nWould you like to see the raw data? \n Enter [YES or NO]:~> ')
+    while raw_data.lower() == 'yes':
+>>>>>>> refactoring
         first_ten_lines = df.iloc[strt: strt+10]
         print('The first ten lines of the raw data are: \n',first_ten_lines)
         strt += 10
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_a03384
         raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [Yes or No]:~> ')
@@ -236,6 +245,11 @@ def more_data(df):
 =======
         raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [Yes or No]:~> ')
 >>>>>>> documentation
+||||||| merged common ancestors
+        raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [Y or N]:~> ')
+=======
+        raw_data = input('\nWould you like to see ten more lines of the raw data? \n Enter [YES or NO]:~> ')
+>>>>>>> refactoring
 
 
 def main():
@@ -249,6 +263,7 @@ def main():
         user_stats(df)
         more_data(df)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< .merge_file_a03384
         restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [Yes or No]:~> ')
@@ -267,6 +282,13 @@ def main():
         restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [Yes or No]:~> ')
         if restart.lower() != 'yes':
 >>>>>>> documentation
+||||||| merged common ancestors
+        restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [Y or N]:~> ')
+        if restart.lower() != 'y':
+=======
+        restart = input('\nWould you like to esplore the US bikeshare data again? \n Enter [YES or NO]:~> ')
+        if restart.lower() != 'yes':
+>>>>>>> refactoring
             break
 
 
